@@ -587,6 +587,56 @@
   }
   footer a{color:rgba(255,255,255,0.75)}
   footer .row{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:8px}
+  .powered-by{
+    margin-top:22px;
+    padding-top:18px;
+    border-top:1px solid rgba(255,255,255,0.06);
+    display:inline-flex;align-items:center;gap:14px;
+    flex-wrap:wrap;justify-content:center;
+    font-size:12px;
+    width:auto;
+  }
+  .pb-label{
+    color:rgba(255,255,255,0.35);
+    font-family:var(--font-mono, ui-monospace, monospace);
+    font-size:10.5px;letter-spacing:0.14em;
+    text-transform:uppercase;font-weight:600;
+  }
+  .pb-brands{
+    display:inline-flex;align-items:center;gap:12px;
+    padding:7px 14px;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:100px;
+    backdrop-filter:blur(8px);
+  }
+  .pb-brand{
+    display:inline-flex;align-items:center;gap:8px;
+    color:rgba(255,255,255,0.85);
+    font-weight:600;letter-spacing:-0.005em;
+    font-size:13px;
+  }
+  .pb-amp{
+    color:rgba(255,255,255,0.4);
+    font-family:'Instrument Serif', Georgia, serif;
+    font-style:italic;font-weight:400;
+    font-size:14px;
+    margin:0 1px;
+  }
+  .pb-sep{color:rgba(255,255,255,0.2);}
+  .pb-dot{
+    width:8px;height:8px;border-radius:50%;
+    display:inline-block;
+    box-shadow:0 0 12px currentColor;
+  }
+  .pb-dot-v{
+    background:linear-gradient(135deg,#9B5CFF,#5B2DD4);
+    color:rgba(155,92,255,0.4);
+  }
+  .pb-dot-ve{
+    background:linear-gradient(135deg,#FFB547,#E07B00);
+    color:rgba(255,181,71,0.4);
+  }
 
   /* ============= RESPONSIVE ============= */
 
@@ -1601,6 +1651,14 @@
     <a href="#">github</a>
     <a href="#">x / twitter</a>
     <a href="mailto:hi@suryanand.com">hi@suryanand.com</a>
+  </div>
+  <div class="powered-by">
+    <span class="pb-label">Powered by</span>
+    <span class="pb-brands">
+      <span class="pb-brand"><span class="pb-dot pb-dot-v"></span>Valthrax</span>
+      <span class="pb-sep">·</span>
+      <span class="pb-brand"><span class="pb-dot pb-dot-ve"></span>Valnora <span class="pb-amp">&amp;</span> Elric</span>
+    </span>
   </div>
 </footer>
 
