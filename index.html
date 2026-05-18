@@ -517,17 +517,36 @@
   }
   .pc-list li b{color:var(--ink);font-weight:700}
   .pc-guarantee{
-    margin-top:18px;padding:16px;border:1px dashed var(--pp-6);background:var(--pp-8);border-radius:12px;
-    display:flex;align-items:center;gap:14px;
+    margin-top:18px;padding:18px 20px;
+    border:1px dashed var(--pp-6);background:var(--pp-8);border-radius:14px;
+    display:flex;align-items:center;gap:18px;
   }
   .pc-guarantee .badge{
-    width:56px;height:56px;border-radius:50%;background:var(--grad-cta);color:#fff;
-    display:flex;align-items:center;justify-content:center;flex-shrink:0;
-    font-weight:800;font-size:11px;text-align:center;line-height:1.1;
+    width:72px;height:72px;flex-shrink:0;
+    border-radius:18px;
+    background:var(--grad-cta);color:#fff;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    font-weight:800;text-align:center;line-height:1;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.18) inset,
+      0 -2px 0 rgba(0,0,0,0.18) inset,
+      0 8px 20px -6px rgba(123,63,228,0.5);
+    padding:8px 4px;
   }
-  .pc-guarantee .badge b{display:block;font-size:18px;font-weight:800}
-  .pc-guarantee p{margin:0;font-size:13.5px;color:var(--ink-2)}
+  .pc-guarantee .badge b{
+    display:block;font-size:24px;font-weight:900;line-height:1;
+    letter-spacing:-0.02em;margin-bottom:3px;
+  }
+  .pc-guarantee .badge .badge-sub{
+    font-size:8.5px;letter-spacing:0.1em;font-weight:700;
+    text-transform:uppercase;opacity:0.92;line-height:1.15;
+  }
+  .pc-guarantee p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.55;min-width:0;flex:1}
   .pc-guarantee p b{color:var(--ink)}
+  @media (max-width: 480px){
+    .pc-guarantee{flex-direction:column;text-align:center;padding:18px;gap:14px}
+    .pc-guarantee .badge{width:64px;height:64px}
+  }
 
   /* Two-tier comparison toggle */
   .price-toggle{
@@ -800,7 +819,7 @@
     .bonus-body{padding:20px}
     .bonus-body h4{font-size:17px}
 
-    /* Comparison table — switch to card layout */
+    /* Comparison table: switch to card layout */
     .cmp-wrap{margin:0 -8px}
     .cmp{display:block;border-radius:14px}
     .cmp thead{display:none}
@@ -914,7 +933,7 @@
     .logo-strip .lcell{flex:0 1 calc(33.333% - 8px);height:48px;padding:7px 9px}
     .logo-strip img{max-height:22px}
 
-    /* Stats — denser */
+    /* Stats: denser */
     .stats-strip{border-radius:14px;margin-top:30px}
     .stats-strip .s{padding:14px 10px}
     .stats-strip .n{font-size:26px;margin-bottom:4px}
@@ -1118,7 +1137,7 @@
 
     <div class="hero-head">
       <h1>Get a <em>Founding Engineer + Team</em> in 4 Weeks.<br/>Embedded with you. Accountable to me.</h1>
-      <p class="sub">Watch the 6-min pitch below. I'll walk you through how we embed into your startup — me leading the architecture and the work, with the right operators behind me when the scope calls for it. This is not a dev shop. We become part of your product, your goals, and your team.</p>
+      <p class="sub">Watch the 6-min pitch below. I'll walk you through how we embed into your startup. I lead the architecture and the work, with the right operators behind me when the scope calls for it. This is not a dev shop. We become part of your product, your goals, and your team.</p>
     </div>
 
     <div class="hero-video-wrap">
@@ -1176,14 +1195,14 @@
     <div class="sec-head">
       <span class="sec-eyebrow">If this sounds like you, keep reading</span>
       <h2>You're One Senior Hire Away From Shipping. But <em>That Hire Is Killing You.</em></h2>
-      <p class="lead">The average founding-engineer search takes 5.4 months. Most pre-PMF startups don't have 5.4 months. And every other option — agencies, freelancer marketplaces, offshore teams — was built to bill you, not build with you.</p>
+      <p class="lead">The average founding-engineer search takes 5.4 months. Most pre-PMF startups don't have 5.4 months. And every other option (agencies, freelancer marketplaces, offshore teams) was built to bill you, not build with you.</p>
     </div>
 
     <div class="split">
       <div class="split-media">[ founder at whiteboard · placeholder ]</div>
       <div class="split-copy">
         <h2>The hidden cost of <em>handing your product to outsiders.</em></h2>
-        <p>Every week your codebase belongs to a vendor instead of a partner, four things compound silently — and none of them show up on your P&amp;L until it's too late.</p>
+        <p>Every week your codebase belongs to a vendor instead of a partner, four things compound silently, and none of them show up on your P&amp;L until it's too late.</p>
         <ul class="bullets">
           <li><b>Your roadmap rots.</b> Investors saw a deck. They expect product, not Jira tickets.</li>
           <li><b>Dev shops bill hours, not outcomes.</b> Their incentive is to stretch, not ship.</li>
@@ -1201,16 +1220,16 @@
     <div class="sec-head">
       <span class="sec-eyebrow">Here's exactly what you get</span>
       <h2>In 4 Weeks, You'll Have a <em>Production-Grade Product</em>, And a Team That's Genuinely Part of It.</h2>
-      <p class="lead">No fluff sprints. No "discovery phases". Real PRs in your repo, day one. The difference: we embed in your goals — your roadmap, your investors, your customer calls. We're not your dev shop. We're operators inside your startup.</p>
+      <p class="lead">No fluff sprints. No "discovery phases". Real PRs in your repo, day one. The difference: we embed in your goals, your roadmap, your investors, your customer calls. We're not your dev shop. We're operators inside your startup.</p>
     </div>
 
     <div class="split reverse">
       <div class="split-copy">
         <h2>Architect. Code. <em>Embed.</em></h2>
-        <p>Most contractors only execute. Most agencies only manage. We do both — and I personally own the outcome from architecture to launch. When the scope is lean, it's mostly me. When the work needs more hands, I bring in a small bench of operators I've shipped with before. Either way, you talk to me, you ship with me, and the work is mine to answer for.</p>
+        <p>Most contractors only execute. Most agencies only manage. We do both, and I personally own the outcome from architecture to launch. When the scope is lean, it's mostly me. When the work needs more hands, I bring in a small bench of operators I've shipped with before. Either way, you talk to me, you ship with me, and the work is mine to answer for.</p>
         <ul class="bullets">
           <li><b>System design done in week one.</b> Auth, payments, data model, infra, CI.</li>
-          <li><b>I write the foundation myself.</b> The first commits, the architecture, the early product decisions — that's me, in your repo.</li>
+          <li><b>I write the foundation myself.</b> The first commits, the architecture, the early product decisions. That's me, in your repo.</li>
           <li><b>The team scales with the work, not the other way around.</b> No padded "resources", no junior bench-warmers.</li>
           <li><b>I am the single accountable owner.</b> One throat to choke, one Slack handle, no account managers.</li>
           <li><b>You own the repo from day one.</b> Full IP assignment, no equity ask, no lock-in.</li>
@@ -1531,7 +1550,7 @@
     <div class="obj-grid">
       <div class="obj">
         <h4><span class="q">Q.</span>"$7,999 a month is too expensive."</h4>
-        <p>Compared to what? A bad senior-eng hire costs you $180k in salary, 4 months of runway, and the wrong architecture. <b>You're getting me plus the right operators behind me, for less than a junior FTE — and you can cancel any month.</b> If month one isn't worth 3× the fee, fire us. It's in the contract.</p>
+        <p>Compared to what? A bad senior-eng hire costs you $180k in salary, 4 months of runway, and the wrong architecture. <b>You're getting me plus the right operators behind me, for less than a junior FTE, and you can cancel any month.</b> If month one isn't worth 3× the fee, fire us. It's in the contract.</p>
       </div>
       <div class="obj">
         <h4><span class="q">Q.</span>"Why not just hire a full-time founding engineer?"</h4>
@@ -1539,11 +1558,11 @@
       </div>
       <div class="obj">
         <h4><span class="q">Q.</span>"Why not an agency? They're cheaper."</h4>
-        <p>Because <b>we're not an agency.</b> Agencies sell hours and disappear after launch. We embed in your goals, your roadmap, your investor calls. The codebase is yours from day one and built by people who care whether your startup is still here in 18 months — because that's how we get to do the next round of work.</p>
+        <p>Because <b>we're not an agency.</b> Agencies sell hours and disappear after launch. We embed in your goals, your roadmap, your investor calls. The codebase is yours from day one and built by people who care whether your startup is still here in 18 months, because that's how we get to do the next round of work.</p>
       </div>
       <div class="obj">
         <h4><span class="q">Q.</span>"So is it you, or is it a team?"</h4>
-        <p>Both, depending on the scope. <b>I lead every engagement and write the early code myself.</b> When the work expands — frontend, ops, integrations, design — I bring in operators I've shipped with before. You always know who is doing what, you always Slack me directly, and I am the single accountable owner. The team scales to the work, never the other way around.</p>
+        <p>Both, depending on the scope. <b>I lead every engagement and write the early code myself.</b> When the work expands (frontend, ops, integrations, design), I bring in operators I've shipped with before. You always know who is doing what, you always Slack me directly, and I am the single accountable owner. The team scales to the work, never the other way around.</p>
       </div>
     </div>
   </div>
@@ -1570,7 +1589,7 @@
         <div class="pricecard-banner"><span class="dot"></span><span id="pc-banner">Only 2 founding-engineer slots open this quarter</span></div>
         <div class="pricecard-body">
           <h3 id="pc-title">Solo · Founding Engineer</h3>
-          <p class="desc" id="pc-desc">For one founder shipping one product. I'm in your repo as the founding engineer — writing the early code, owning the architecture, and bringing in a small bench of operators only when the scope demands it.</p>
+          <p class="desc" id="pc-desc">For one founder shipping one product. I'm in your repo as the founding engineer, writing the early code, owning the architecture, and bringing in a small bench of operators only when the scope demands it.</p>
 
           <div class="price-row">
             <span class="now"><span class="ccy">$</span><span id="pc-price">7,999</span></span>
@@ -1601,8 +1620,8 @@
           </div>
 
           <div class="pc-guarantee">
-            <div class="badge"><b>30</b>DAY<br/>REFUND</div>
-            <p><b>If month one isn't worth 3× the fee, you don't pay for it.</b> No questions, no clawback, you keep every line of code we shipped. I personally back this — it's my name on the work.</p>
+            <div class="badge"><b>30</b><span class="badge-sub">day<br/>refund</span></div>
+            <p><b>If month one isn't worth 3× the fee, you don't pay for it.</b> No questions, no clawback, you keep every line of code we shipped. I personally back this. It's my name on the work.</p>
           </div>
         </div>
       </div>
@@ -1631,7 +1650,7 @@
       </div>
       <div class="obj">
         <h4><span class="q">02.</span>The team appears when the work needs it</h4>
-        <p>Frontend polish, data infra, design, ops — when scope expands, I bring in operators I've shipped with before. <b>Never strangers, never juniors padding a retainer.</b> Each person is named, briefed, and owns a specific surface.</p>
+        <p>Frontend polish, data infra, design, ops: when scope expands, I bring in operators I've shipped with before. <b>Never strangers, never juniors padding a retainer.</b> Each person is named, briefed, and owns a specific surface.</p>
       </div>
       <div class="obj">
         <h4><span class="q">03.</span>We embed, we don't bill</h4>
@@ -1673,7 +1692,7 @@
       </details>
       <details class="qa">
         <summary>Is it always you doing the work, or a team?<span class="ic">+</span></summary>
-        <div class="ans">I'm the constant. I lead every engagement, write the foundation code, own the architecture, and stay accountable to you for everything that ships. When the scope needs more — additional engineers, design, ops — I bring in operators I've shipped with before and you always know exactly who's doing what. We're not a dev shop with a sales team in front and juniors behind. We embed.</div>
+        <div class="ans">I'm the constant. I lead every engagement, write the foundation code, own the architecture, and stay accountable to you for everything that ships. When the scope needs more, like additional engineers, design, or ops, I bring in operators I've shipped with before and you always know exactly who's doing what. We're not a dev shop with a sales team in front and juniors behind. We embed.</div>
       </details>
       <details class="qa">
         <summary>What if I just need help for a month?<span class="ic">+</span></summary>
@@ -1696,7 +1715,7 @@
   <div class="wrap">
     <span class="sec-eyebrow">Last Step</span>
     <h2>Stop Reading. <em>Book The Call.</em></h2>
-    <p class="lead">30 minutes. No pitch. You explain the product, I tell you whether we're the right team — me leading, with the right operators behind me. If we're not the fit, I'll tell you who is.</p>
+    <p class="lead">30 minutes. No pitch. You explain the product, I tell you whether we're the right team. I lead, with the right operators behind me. If we're not the fit, I'll tell you who is.</p>
 
     <div class="cta-wrap">
       <div class="cta-band">
