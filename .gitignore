@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if you add tooling later)
+node_modules/
+npm-debug.log*
+
+# Logs / temp
+*.log
+*.tmp
